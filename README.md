@@ -7,9 +7,11 @@ Read these Markdown guides directly on GitHub or in your editor, and run the acc
 
 1. Install Python 3.12 or newer, or use an existing compatible installation.
 2. Clone or download this repository, including its helper modules and input files.
+
     ```shell
     git clone https://github.com/RiTomasBjornfot/DES-Community.git
     ```
+
 3. Create a virtual environment to avoid dependency conflicts:
 
     ```shell
@@ -17,7 +19,7 @@ Read these Markdown guides directly on GitHub or in your editor, and run the acc
     python3 -m venv .venv
     ```
 
-4. Activate the virtual environment if you created one:
+4. Activate your virtual environment:
 
     Linux:
 
@@ -36,9 +38,6 @@ Read these Markdown guides directly on GitHub or in your editor, and run the acc
     ```shell
     python -m pip install -r requirements.txt
     ```
-
-A virtual environment is optional. If you already use a suitable Python environment, you can use it instead. Reading the guides requires no Python installation.
-
 Start with the system overview and account information below. Then try:
 
 ```shell
