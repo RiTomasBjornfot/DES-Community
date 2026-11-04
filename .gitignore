@@ -6,11 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
-# IPython/Jupyter Notebook checkpoints
-.ipynb_checkpoints
 
-# Jupyter Notebook metadata
-*.nbconvert.ipynb
 
 # Ignore virtual environment directories
 env/
@@ -51,15 +47,8 @@ wheels/
 *.sqlite3
 *.db
 
-# Docker
 *.env
 *.envrc
-.docker/
-docker-compose.override.yml
-docker-compose.local.yml
-docker-compose.test.yml
-Dockerfile.local
-Dockerfile.test
 
 # Ignore the output of build scripts
 target/
@@ -75,10 +64,9 @@ temp/
 *~
 .DS_Store
 
-# Ignore Jupyter Notebook outputs
-*.checkpoint.ipynb
-.ipynb_checkpoints/
 
 # Ignore own  data and results
 data/
 tutorials/results/
+# Generated example figures and maps
+**/outputs/

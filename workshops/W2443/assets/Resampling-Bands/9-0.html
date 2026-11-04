@@ -1,0 +1,19 @@
+
+    <script>
+    if (!window.customElements || !window.customElements.get('openeo-model-builder')) {
+        var el = document.createElement('script');
+        el.src = "https://cdn.jsdelivr.net/npm/@openeo/vue-components@2/assets/openeo.min.js";
+        document.head.appendChild(el);
+
+        var font = document.createElement('font');
+        font.as = "font";
+        font.type = "font/woff2";
+        font.crossOrigin = true;
+        font.href = "https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2"
+        document.head.appendChild(font);
+    }
+    </script>
+    <openeo-model-builder>
+        <script type="application/json">{"id": "f79144fe4bb04675844f34253215b382", "explicit-zoom": true, "height": "400px", "value": {"process_graph": {"loadcollection1": {"process_id": "load_collection", "arguments": {"bands": ["b11"], "id": "s2_msi_l2a", "spatial_extent": {"west": 13.460930954751282, "east": 13.585449709728213, "south": 59.36327761288911, "north": 59.40107161575003}, "temporal_extent": ["2024-06-12", "2024-06-13"]}}, "loadcollection2": {"process_id": "load_collection", "arguments": {"bands": ["b04"], "id": "s2_msi_l2a", "spatial_extent": {"west": 13.460930954751282, "east": 13.585449709728213, "south": 59.36327761288911, "north": 59.40107161575003}, "temporal_extent": ["2024-06-12", "2024-06-13"]}}, "resamplecubespatial1": {"process_id": "resample_cube_spatial", "arguments": {"data": {"from_node": "loadcollection2"}, "method": "bilinear", "target": {"from_node": "loadcollection1"}}}, "mergecubes1": {"process_id": "merge_cubes", "arguments": {"cube1": {"from_node": "loadcollection1"}, "cube2": {"from_node": "resamplecubespatial1"}}, "result": true}}}}</script>
+    </openeo-model-builder>
+    

@@ -1,110 +1,99 @@
-# Digital-Earth-Sweden Community
+# Digital Earth Sweden Community
 
-This is where you can:
-- Take an extensive tutorial of our system
-- File bug reports
-- Make wishes for and discuss new features
-- Ask and answer questions
+Learn to access and analyse satellite data with Digital Earth Sweden (DES).
+Read these Markdown guides directly on GitHub or in your editor, and run the accompanying Python scripts in your preferred Python environment.
 
-The community repo is shared and monitored by developers, stakeholders and regular users. It is the responsibility of us all to look into this repository and help each other out.
+## Get started
 
-# Tutorials
-This guide will walk you through various ways to run the Jupyter notebooks included in this repository, whether you just want to explore the content or dive deep into working with the files.
-
-## Running a Notebook Server Without Cloning the Repo
-
-If you want to quickly check out the tutorials without saving any changes or downloading the files locally, you can run the notebook server directly from the Docker image. This is a great option if you’re just exploring and don’t need to save your work. If you do not have Docker installed or know how to use it check out [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/).
-
-### How to Run
-
-1. Open your terminal or command prompt.
-2. Run the following Docker commands:
-
-   `docker pull ghcr.io/digitalearthsweden/tutorials:latest`
-
-   `docker run --rm -it -p 8888:8888 ghcr.io/digitalearthsweden/tutorials:latest`
-
-3. Open Firefox (or your preferred browser) and navigate to <http://127.0.0.1:8888> to access the Jupyter Lab interface.
-
-   If using Firefox, you can also start the browser with the URL directly from the command line:
+1. Install Python 3.12 or newer, or use an existing compatible installation.
+2. Clone or download this repository, including its helper modules and input files.
+3. Install the example dependencies into your chosen environment:
 
    ```shell
-   firefox http://127.0.0.1:8888
+   python -m pip install -r requirements.txt
    ```
 
-   This will allow you to explore the tutorials without needing to clone the repository or worry about saving files.
+A virtual environment is recommended to avoid dependency conflicts, but is optional. Use whichever environment manager you normally use. Reading the guides requires no Python installation.
 
-### Note
-- **Files are not saved**: Since you’re running the notebooks in a Docker container without mounting any local directories, any changes you make will not persist after the container is stopped.
+Start with the system overview and account information below. Then try:
 
-## If You Want to Work with the Files
+```shell
+python tutorials/020_DATA_010-Loading-DataCubes.py
+```
 
-If you want to make changes to the notebooks and save your work, you’ll need to clone the repository and run the notebooks in a way that allows you to persist files.
+The Python code runs on your computer. openEO builds a description of the analysis and submits it to DES, where the satellite processing happens. Downloaded data, plotting and subsequent Python analysis run locally.
 
-### How to Clone and Run
+## Reading and running examples
 
-1. **Clone the Repository**:
+Each practical guide contains explanations, code sections and a link to a complete Python script. Edit the area, dates and bands in the script, then run it. All steps execute in order. Batch examples can create and rerun remote jobs.
 
-   First, clone the repository to your local machine:
+Text results appear in the terminal. Figures are written as PNG files; interactive maps are written as HTML files. Output paths are printed in the terminal. Scripts use their own directory as their working directory, so relative input paths work regardless of where you launch them.
 
-   **HTTPS**: `git clone https://github.com/DigitalEarthSweden/digital-earth-sweden-community.git`
-   
-   **SSH**: `git clone git@github.com:DigitalEarthSweden/digital-earth-sweden-community.git`
+The examples retain the original dataset IDs and dates. Check availability on the current backend before using them for a new analysis. Saved illustrations show earlier runs.
 
-   and then `cd digital-earth-sweden-community`
+## Accounts
 
-2. **Run the following docker commands**:
+The tutorials default to the public demonstration account from the original material. Its jobs and results are shared. For the main tutorials, set `DES_USER` and `DES_PASSWORD` to use your own account, and optionally `DES_URL` to select a backend. The MOOC examples retain their explicit connection code, which you can edit. The original account-registration link is still missing; contact DES for personal access.
 
-   `docker pull ghcr.io/digitalearthsweden/tutorials:latest`
+## Guides
 
-   `docker run --rm -it -p 8888:8888 --mount type=bind,source=./tutorials,target=/proj ghcr.io/digitalearthsweden/tutorials:latest`
+### From satellite data to insights
 
-   These commands will start the Docker container, mount the tutorials directory, and expose the Jupyter Lab server at `http://127.0.0.1:8888`.
+- [session1 welcome to des](moocs/from_satellite_data_to_insights/session1_welcome_to_des.md)
+- [session2 loading and visualizing](moocs/from_satellite_data_to_insights/session2_loading_and_visualizing.md)
+- [session3 band arithmetic ndvi](moocs/from_satellite_data_to_insights/session3_band_arithmetic_ndvi.md)
+- [session4 temporal reduction](moocs/from_satellite_data_to_insights/session4_temporal_reduction.md)
+- [session5 cloud masking compositing](moocs/from_satellite_data_to_insights/session5_cloud_masking_compositing.md)
+- [session6 urban green mapping](moocs/from_satellite_data_to_insights/session6_urban_green_mapping.md)
 
-- **Mounting**: Mounting your local directory to the container allows the container to read and write files from your local machine. This ensures that any changes you make in Jupyter Lab, including new files and folders, will be saved in the tutorials folder.
+### Tutorials
 
-## Setting Up a Local Environment
+- [000-Terms-and-Conditions](tutorials/000-Terms-and-Conditions.md)
+- [010 INTRO-010-System-Overview](tutorials/010_INTRO-010-System-Overview.md)
+- [010 INTRO-020-User-Handling](tutorials/010_INTRO-020-User-Handling.md)
+- [01 INTRO 001-Tutorial-Overview](tutorials/01_INTRO_001-Tutorial-Overview.md)
+- [020 DATA 010-Loading-DataCubes](tutorials/020_DATA_010-Loading-DataCubes.md)
+- [020 DATA 020-Property Filtering](tutorials/020_DATA_020-Property_Filtering.md)
+- [030 GEOM 010-Bounding-box](tutorials/030_GEOM_010-Bounding-box.md)
+- [030 GEOM 020-Polygons-Intro](tutorials/030_GEOM_020-Polygons-Intro.md)
+- [030 GEOM 030-Polygons-Areas](tutorials/030_GEOM_030-Polygons-Areas.md)
+- [040 VIZ 010-RGB](tutorials/040_VIZ_010-RGB.md)
+- [040 VIZ 020-Drawing-Images-On-Base-Map](tutorials/040_VIZ_020-Drawing-Images-On-Base-Map.md)
+- [040 VIZ 030-Difference-Analysis](tutorials/040_VIZ_030-Difference-Analysis.md)
+- [050 PROC 010-Processes-intro](tutorials/050_PROC_010-Processes-intro.md)
+- [050 PROC 020-Operators](tutorials/050_PROC_020-Operators.md)
+- [050 PROC 030-Batch-Processing](tutorials/050_PROC_030-Batch-Processing.md)
+- [060 EO 010-Masking-data](tutorials/060_EO_010-Masking-data.md)
+- [060 EO 020-Reductions](tutorials/060_EO_020-Reductions.md)
+- [060 EO 030-Spatial-Filtering](tutorials/060_EO_030-Spatial-Filtering.md)
+- [0990 Further-Reading](tutorials/0990_Further-Reading.md)
 
-If you prefer to work in your local environment without Docker, you can create the Python environment with [uv](https://docs.astral.sh/uv/). uv installs exactly the same package versions as the Docker image (from `uv.lock`). Please do not use Conda or pip for these tutorials; mixing package managers easily leads to versioning problems.
+### Historical workshops
 
-### Steps to Set Up
+- [A index](workshops/W2443/A_index.md)
+- [Resampling-Bands](workshops/W2443/Resampling-Bands.md)
+- [gathering examples workshop](workshops/W2443/gathering_examples_workshop.md)
+- [python and other APIs](workshops/W2443/python_and_other_APIs.md)
+- [quality filter index boxes](workshops/W2443/quality_filter_index_boxes.md)
+- [Introduction](workshops/cs_day_hackathon_2024/Introduction.md)
+- [Resampling-Bands](workshops/cs_day_hackathon_2024/Resampling-Bands.md)
 
-1. **Install uv**: Follow the [installation instructions](https://docs.astral.sh/uv/getting-started/installation/).
+## Community and resources
 
-2. **Create the Environment**:
+Use the [community repository](https://github.com/DigitalEarthSweden/digital-earth-sweden-community) to report bugs, discuss features and ask or answer questions. The community is shared by developers, stakeholders and users.
 
-   Navigate to the directory where you cloned the repository and run:
+- [Map viewer](https://maps.digitalearth.se)
+- [Data Explorer](https://explorer.digitalearth.se)
+- [openEO web editor](https://editor.openeo.org/?server=https%3A%2F%2Fopeneo.digitalearth.se)
 
-   `uv sync`
+The original support guidance says the small team typically monitors the forum on Mondays; please use the forum rather than personal messages or Teams.
 
-   This creates a virtual environment in `.venv` with all the dependencies needed to run the notebooks. If no suitable Python version (3.12 or newer) is installed, uv will download one for you.
+## Migration status
 
-3. **Run Jupyter Lab**:
+All original tutorial, MOOC and workshop guides have been transferred to Markdown, with code in ordinary Python scripts. Narrative text, code comments, available saved outputs and supporting files are retained where possible. Installation-specific material has been replaced by the instructions above.
 
-   `uv run jupyter lab`
+Scripts have been checked for Python syntax, but have not been run against DES. Historical workshop examples and pre-existing backend limitations need a separate execution review. Dependency versions are not locked or verified as a complete installation yet. See [migration notes](MIGRATION.md).
 
-   This will launch Jupyter Lab in your default web browser, allowing you to work with the tutorials in a local environment.
+## Checks
 
-### Adding Packages
-
-To install additional packages, use uv from a terminal in the repository instead of pip:
-
-`uv add <package>`
-
-### Running the Tests
-
-The notebooks are tested by executing them against the Digital Earth Sweden platform:
-
-`uv run pytest tests/`
-
-### Requirements
-- **uv**: Make sure you have uv installed. It installs the required Python version for you.
-
-# Additional Resources
-If you are new to Digital Earth Sweden, the following resources may be helpful:
-- https://maps.digitalearth.se
-- https://explorer.digitalearth.se
-- https://editor.openeo.org/?server=https%3A%2F%2Fopeneo.digitalearth.se
-
-
-**NOTE!** Since our team is very small, we will take turns to monitor this forum. Typically this will be assigned a slot on Mondays. Please avoid using Teams and personal messages to the team.
+Run `python -m unittest discover -s tests -v` for offline documentation and syntax checks (standard library only). To execute the selected tutorial scripts against DES, first install the dependencies and run `DES_RUN_INTEGRATION=1 ./start_tests.sh`. These integration checks download data and may consume backend resources. The same opt-in check is available through the GitHub Actions workflow dispatch form.

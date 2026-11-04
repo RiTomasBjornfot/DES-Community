@@ -1,0 +1,19 @@
+
+    <script>
+    if (!window.customElements || !window.customElements.get('openeo-job')) {
+        var el = document.createElement('script');
+        el.src = "https://cdn.jsdelivr.net/npm/@openeo/vue-components@2/assets/openeo.min.js";
+        document.head.appendChild(el);
+
+        var font = document.createElement('font');
+        font.as = "font";
+        font.type = "font/woff2";
+        font.crossOrigin = true;
+        font.href = "https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2"
+        document.head.appendChild(font);
+    }
+    </script>
+    <openeo-job>
+        <script type="application/json">{"currency": null, "job": {"id": "b31b7b5d-b5b0-4a09-930e-acee996f49db", "title": "NDVI Batch Job", "description": "Calculating NDVI for selected area", "process": {"process_graph": {"loadcollection1": {"process_id": "load_collection", "arguments": {"bands": ["b04", "b08"], "id": "s2_msi_l2a", "spatial_extent": {"west": 13.460930954751282, "east": 13.585449709728213, "south": 59.36327761288911, "north": 59.40107161575003}, "temporal_extent": ["2021-11-12T00:00:00Z", "2021-11-13T00:00:00Z"]}}, "ndvi1": {"process_id": "ndvi", "arguments": {"data": {"from_node": "loadcollection1"}, "nir": "b08", "red": "b04"}}, "saveresult1": {"process_id": "save_result", "arguments": {"data": {"from_node": "ndvi1"}, "format": "GTiff", "options": {}}, "result": true}}}, "status": "finished", "progress": 0.0, "created": "2024-10-18T07:28:15.147029Z", "updated": "2024-10-18T07:29:44.755410Z", "budget": 0.0}}</script>
+    </openeo-job>
+    

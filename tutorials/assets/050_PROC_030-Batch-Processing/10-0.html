@@ -1,0 +1,19 @@
+
+    <script>
+    if (!window.customElements || !window.customElements.get('openeo-logs')) {
+        var el = document.createElement('script');
+        el.src = "https://cdn.jsdelivr.net/npm/@openeo/vue-components@2/assets/openeo.min.js";
+        document.head.appendChild(el);
+
+        var font = document.createElement('font');
+        font.as = "font";
+        font.type = "font/woff2";
+        font.crossOrigin = true;
+        font.href = "https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2"
+        document.head.appendChild(font);
+    }
+    </script>
+    <openeo-logs>
+        <script type="application/json">{"logs": [{"id": "456", "level": "info", "message": "Worker EOW-9782-worker-85f8855885-bbxww Received Job for execution.", "time": "2024-10-18T07:29:35.532831Z"}, {"id": "454", "level": "info", "message": "Job Created", "time": "2024-10-18T07:28:15.153467Z"}, {"id": "455", "level": "info", "message": "Job start execution requested.", "time": "2024-10-18T07:29:33.160021Z"}, {"id": "457", "level": "info", "message": "Worker EOW-9782-worker-85f8855885-bbxww Completed Job with State.finished.", "time": "2024-10-18T07:29:44.764826Z", "usage": {"duration": {"value": 9193.0, "unit": "ms"}, "storage": {"value": 3881866.0, "unit": "bytes"}}}]}</script>
+    </openeo-logs>
+    

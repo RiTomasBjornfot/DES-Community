@@ -1,42 +1,30 @@
 [project]
 name = "openeo-training"
 version = "0.1.0"
-description = "Installation project for openeo-training"
+description = "Digital Earth Sweden Python examples and guides"
 requires-python = ">=3.12"
 dependencies = [
-  # "ai-assistant",
-  "bottleneck >= 1",  # for speeding up certain operations in xarray
-  "cartopy >= 0.25",  # for plotting and mapping in geospatial applications
-  "dask >= 2025",  # for parallel computing with xarray
-  "folium >= 0.20",
-  "geopandas >= 1",
-  "h5netcdf >= 1",  # alternative library for reading and writing NetCDF4 files
-  "h5py >= 3",
-  "icecream >= 2", # for nicer debug printouts
-  "jupyterlab >= 4",
-  "llama-index >= 0.14",
-  "matplotlib >= 3",
-  "netcdf4 >= 1",
-  "numba >= 0.6",  # for accelerating xarray operations, optional
-  "numpy>=1.9",
-  "pytest >= 9",
-  "openeo >= 0.50",
-  "pip >= 26",
-  "pydantic >= 2",
-  "pypdf >=6",
-  "pyyaml >= 6",
-  "rasterio >= 1.5",
-  "rioxarray >= 0.21",
-  "scikit-learn >= 1",  # for machine learning in the MOOC notebooks
-  "scipy >= 1",  # fallback for reading/writing netCDF3 and for xarray interpolation features
-  "seaborn >= 0.13",  # for better color palettes in plots
-  "shapely != 2.2.0", # No direct use, but 2.2.0 does not build in Docker image.
-  "testbook >= 0.4",
-  "xarray[io,viz] >= 2025",
+  "openeo>=0.50",
+  "numpy",
+  "matplotlib",
+  "xarray",
+  "rasterio",
+  "rioxarray",
+  "netCDF4",
+  "h5netcdf",
+  "h5py",
+  "scipy",
+  "dask",
+  "bottleneck",
+  "geopandas",
+  "shapely",
+  "pyproj",
+  "cartopy",
+  "folium",
+  "PyYAML",
+  "scikit-learn",
+  "seaborn",
+  "requests",
+  "pydantic",
+  "icecream",
 ]
-
-[tool.uv]
-# This will prevent security updates that are more recent than 7 days from
-# being used. Seems like we are waiting for the exclude-newer support in
-# Renovate.
-#exclude-newer = "7 days"

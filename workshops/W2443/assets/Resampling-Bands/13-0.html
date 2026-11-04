@@ -1,0 +1,19 @@
+
+    <script>
+    if (!window.customElements || !window.customElements.get('openeo-logs')) {
+        var el = document.createElement('script');
+        el.src = "https://cdn.jsdelivr.net/npm/@openeo/vue-components@2/assets/openeo.min.js";
+        document.head.appendChild(el);
+
+        var font = document.createElement('font');
+        font.as = "font";
+        font.type = "font/woff2";
+        font.crossOrigin = true;
+        font.href = "https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2"
+        document.head.appendChild(font);
+    }
+    </script>
+    <openeo-logs>
+        <script type="application/json">{"logs": [{"id": "950", "level": "info", "message": "Job Created", "time": "2024-10-24T05:31:20.827840Z"}, {"id": "952", "level": "info", "message": "Worker received job for execution.", "time": "2024-10-24T05:31:22.744053Z", "data": {"worker": "EOW-2024-09-12-14:39--dfm-nbs-EEQOEK"}}, {"id": "953", "level": "info", "message": "Worker completed job with status finished.", "time": "2024-10-24T05:31:33.190258Z", "data": {"stderr": "", "stdout": "Executing process graph:\nSaving result of type <class 'xarray.core.dataarray.DataArray'>. \nProcess graph executed\n", "worker": "EOW-2024-09-12-14:39--dfm-nbs-EEQOEK"}, "usage": {"duration": {"value": 10298.0, "unit": "ms"}, "storage": {"value": 0.0, "unit": "bytes"}}}, {"id": "951", "level": "info", "message": "Job start execution requested.", "time": "2024-10-24T05:31:21.578771Z"}]}</script>
+    </openeo-logs>
+    
