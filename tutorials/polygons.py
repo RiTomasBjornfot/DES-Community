@@ -1,4 +1,4 @@
-"""030_GEOM_020-Polygons-Intro: see the accompanying Markdown guide."""
+"""polygons: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

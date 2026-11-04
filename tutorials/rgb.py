@@ -1,4 +1,4 @@
-"""040_VIZ_010-RGB: see the accompanying Markdown guide."""
+"""rgb: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

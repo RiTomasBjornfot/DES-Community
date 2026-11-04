@@ -1,4 +1,4 @@
-"""050_PROC_030-Batch-Processing: see the accompanying Markdown guide."""
+"""batch-processing: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

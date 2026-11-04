@@ -1,4 +1,4 @@
-"""020_DATA_010-Loading-DataCubes: see the accompanying Markdown guide."""
+"""loading-data: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

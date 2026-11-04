@@ -1,4 +1,4 @@
-"""040_VIZ_020-Drawing-Images-On-Base-Map: see the accompanying Markdown guide."""
+"""images-on-base-map: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

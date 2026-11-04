@@ -62,17 +62,17 @@ class IntegrationTests(unittest.TestCase):
         # Same coverage as the former integration suite. Other examples include
         # batch reruns, historical services, or known backend limitations.
         examples = [
-            '020_DATA_010-Loading-DataCubes',
-            '020_DATA_020-Property_Filtering',
-            '030_GEOM_010-Bounding-box',
-            '030_GEOM_020-Polygons-Intro',
-            '030_GEOM_030-Polygons-Areas',
-            '040_VIZ_010-RGB',
-            '040_VIZ_020-Drawing-Images-On-Base-Map',
-            '050_PROC_010-Processes-intro',
-            '050_PROC_020-Operators',
-            '060_EO_020-Reductions',
-            '060_EO_030-Spatial-Filtering',
+            'loading-data',
+            'property-filtering',
+            'bounding-box',
+            'polygons',
+            'polygon-areas',
+            'rgb',
+            'images-on-base-map',
+            'processes',
+            'operators',
+            'reductions',
+            'spatial-filtering',
         ]
         for name in examples:
             with self.subTest(example=name):

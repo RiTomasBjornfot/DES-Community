@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](060_EO_010-Masking-data.py)
+[Documentation home](../README.md) · [Download Python script](masking-data.py)
 
-Run from this directory with `python 060_EO_010-Masking-data.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/060_EO_010-Masking-data/`.
+Run from this directory with `python masking-data.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/masking-data/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -152,7 +152,7 @@ show_binary_image_thumbnail(scl_mask_image, title=title)
 )
 ```
 
-![Example output](assets/060_EO_010-Masking-data/5-0.png)
+![Example output](assets/masking-data/5-0.png)
 
 ```text
 --------------------------------Logical Mask made out of the SCL Mask--------------------------------
@@ -222,7 +222,7 @@ res = masked_b05.download(format="gtiff")
 _ = show_result(res, title="Masked b05 band", colormap="Greys_r")
 ```
 
-![Example output](assets/060_EO_010-Masking-data/8-0.png)
+![Example output](assets/masking-data/8-0.png)
 
 ### Explaining the Masked Result (Filtering out alternative)
 
@@ -468,7 +468,7 @@ print(oa08_image[:8, :3])
 )
 ```
 
-![Example output](assets/060_EO_010-Masking-data/12-0.png)
+![Example output](assets/masking-data/12-0.png)
 
 ```text
 Raw pixel values of the original (unmasked) image  (first 8 rows and 3 columns):
@@ -512,7 +512,7 @@ show_binary_image_thumbnail(wsqf_image, title=title)
 )
 ```
 
-![Example output](assets/060_EO_010-Masking-data/13-0.png)
+![Example output](assets/masking-data/13-0.png)
 
 ```text
 ------------------------------------------Original WSQF Band------------------------------------------
@@ -549,7 +549,7 @@ show_binary_image_thumbnail(masked_wsqf_image, title=title)
 )
 ```
 
-![Example output](assets/060_EO_010-Masking-data/14-0.png)
+![Example output](assets/masking-data/14-0.png)
 
 ```text
 -----------------------WSQF band masked with 00000000000100000000000000000100:-----------------------
@@ -611,7 +611,7 @@ show_binary_image_thumbnail(qmask_image, title=title)
 )
 ```
 
-![Example output](assets/060_EO_010-Masking-data/16-0.png)
+![Example output](assets/masking-data/16-0.png)
 
 ```text
 ----------------------------Logical Mask Created from the Masked WSQF band----------------------------
@@ -642,7 +642,7 @@ masked_data = masked_oa08.download(format="gtiff")
 masked_image = show_result(masked_data, title="Masked 08 band!", colormap="gray", norm=False)
 ```
 
-![Example output](assets/060_EO_010-Masking-data/17-0.png)
+![Example output](assets/masking-data/17-0.png)
 
 ### Concluding Remarks
 

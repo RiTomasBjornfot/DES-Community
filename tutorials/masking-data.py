@@ -1,4 +1,4 @@
-"""060_EO_010-Masking-data: see the accompanying Markdown guide."""
+"""masking-data: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

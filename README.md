@@ -7,18 +7,42 @@ Read these Markdown guides directly on GitHub or in your editor, and run the acc
 
 1. Install Python 3.12 or newer, or use an existing compatible installation.
 2. Clone or download this repository, including its helper modules and input files.
-3. Install the example dependencies into your chosen environment:
+    ```shell
+    git clone https://github.com/RiTomasBjornfot/DES-Community.git
+    ```
+3. Create a virtual environment to avoid dependency conflicts:
 
-   ```shell
-   python -m pip install -r requirements.txt
-   ```
+    ```shell
+    cd DES-Community
+    python3 -m venv .venv
+    ```
 
-A virtual environment is recommended to avoid dependency conflicts, but is optional. Use whichever environment manager you normally use. Reading the guides requires no Python installation.
+4. Activate the virtual environment if you created one:
+
+    Linux:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+    Windows (PowerShell):
+
+    ```powershell
+    .venv\Scripts\Activate.ps1
+    ```
+
+5. Install the example dependencies into your chosen environment:
+
+    ```shell
+    python -m pip install -r requirements.txt
+    ```
+
+A virtual environment is optional. If you already use a suitable Python environment, you can use it instead. Reading the guides requires no Python installation.
 
 Start with the system overview and account information below. Then try:
 
 ```shell
-python tutorials/020_DATA_010-Loading-DataCubes.py
+python tutorials/loading-data.py
 ```
 
 The Python code runs on your computer. openEO builds a description of the analysis and submits it to DES, where the satellite processing happens. Downloaded data, plotting and subsequent Python analysis run locally.
@@ -48,25 +72,25 @@ The tutorials default to the public demonstration account from the original mate
 
 ### Tutorials
 
-- [000-Terms-and-Conditions](tutorials/000-Terms-and-Conditions.md)
-- [010 INTRO-010-System-Overview](tutorials/010_INTRO-010-System-Overview.md)
-- [010 INTRO-020-User-Handling](tutorials/010_INTRO-020-User-Handling.md)
-- [01 INTRO 001-Tutorial-Overview](tutorials/01_INTRO_001-Tutorial-Overview.md)
-- [020 DATA 010-Loading-DataCubes](tutorials/020_DATA_010-Loading-DataCubes.md)
-- [020 DATA 020-Property Filtering](tutorials/020_DATA_020-Property_Filtering.md)
-- [030 GEOM 010-Bounding-box](tutorials/030_GEOM_010-Bounding-box.md)
-- [030 GEOM 020-Polygons-Intro](tutorials/030_GEOM_020-Polygons-Intro.md)
-- [030 GEOM 030-Polygons-Areas](tutorials/030_GEOM_030-Polygons-Areas.md)
-- [040 VIZ 010-RGB](tutorials/040_VIZ_010-RGB.md)
-- [040 VIZ 020-Drawing-Images-On-Base-Map](tutorials/040_VIZ_020-Drawing-Images-On-Base-Map.md)
-- [040 VIZ 030-Difference-Analysis](tutorials/040_VIZ_030-Difference-Analysis.md)
-- [050 PROC 010-Processes-intro](tutorials/050_PROC_010-Processes-intro.md)
-- [050 PROC 020-Operators](tutorials/050_PROC_020-Operators.md)
-- [050 PROC 030-Batch-Processing](tutorials/050_PROC_030-Batch-Processing.md)
-- [060 EO 010-Masking-data](tutorials/060_EO_010-Masking-data.md)
-- [060 EO 020-Reductions](tutorials/060_EO_020-Reductions.md)
-- [060 EO 030-Spatial-Filtering](tutorials/060_EO_030-Spatial-Filtering.md)
-- [0990 Further-Reading](tutorials/0990_Further-Reading.md)
+- [Terms and conditions](tutorials/terms-and-conditions.md)
+- [System overview](tutorials/system-overview.md)
+- [User accounts](tutorials/user-accounts.md)
+- [Tutorial overview](tutorials/tutorial-overview.md)
+- [Loading data](tutorials/loading-data.md)
+- [Property filtering](tutorials/property-filtering.md)
+- [Bounding box](tutorials/bounding-box.md)
+- [Polygons](tutorials/polygons.md)
+- [Polygon areas](tutorials/polygon-areas.md)
+- [RGB](tutorials/rgb.md)
+- [Images on base map](tutorials/images-on-base-map.md)
+- [Difference analysis](tutorials/difference-analysis.md)
+- [Processes](tutorials/processes.md)
+- [Operators](tutorials/operators.md)
+- [Batch processing](tutorials/batch-processing.md)
+- [Masking data](tutorials/masking-data.md)
+- [Reductions](tutorials/reductions.md)
+- [Spatial filtering](tutorials/spatial-filtering.md)
+- [Further reading](tutorials/further-reading.md)
 
 ### Historical workshops
 

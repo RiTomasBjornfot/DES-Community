@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](040_VIZ_010-RGB.py)
+[Documentation home](../README.md) · [Download Python script](rgb.py)
 
-Run from this directory with `python 040_VIZ_010-RGB.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/040_VIZ_010-RGB/`.
+Run from this directory with `python rgb.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/rgb/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -263,7 +263,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/040_VIZ_010-RGB/16-0.png)
+![Example output](assets/rgb/16-0.png)
 
 ### Repeating Steps 3 and 4 with NIR instead of Red:
 
@@ -296,7 +296,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/040_VIZ_010-RGB/18-0.png)
+![Example output](assets/rgb/18-0.png)
 
 ## Summary:
 

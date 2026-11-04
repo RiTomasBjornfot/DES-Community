@@ -1,4 +1,4 @@
-"""060_EO_020-Reductions: see the accompanying Markdown guide."""
+"""reductions: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

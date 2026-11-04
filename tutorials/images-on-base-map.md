@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](040_VIZ_020-Drawing-Images-On-Base-Map.py)
+[Documentation home](../README.md) · [Download Python script](images-on-base-map.py)
 
-Run from this directory with `python 040_VIZ_020-Drawing-Images-On-Base-Map.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/040_VIZ_020-Drawing-Images-On-Base-Map/`.
+Run from this directory with `python images-on-base-map.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/images-on-base-map/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -207,4 +207,4 @@ ax.imshow(rgb_scaled, extent=extent, transform=ccrs.epsg(crs))
 <matplotlib.image.AxesImage at 0x7f21400f28c0>
 ```
 
-![Example output](assets/040_VIZ_020-Drawing-Images-On-Base-Map/11-1.png)
+![Example output](assets/images-on-base-map/11-1.png)

@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](040_VIZ_030-Difference-Analysis.py)
+[Documentation home](../README.md) · [Download Python script](difference-analysis.py)
 
-Run from this directory with `python 040_VIZ_030-Difference-Analysis.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/040_VIZ_030-Difference-Analysis/`.
+Run from this directory with `python difference-analysis.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/difference-analysis/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -131,9 +131,9 @@ show_single_result_as_rgb(last_image.download(format='gtiff'), "Last image")
 )
 ```
 
-![Example output](assets/040_VIZ_030-Difference-Analysis/6-0.png)
+![Example output](assets/difference-analysis/6-0.png)
 
-![Example output](assets/040_VIZ_030-Difference-Analysis/6-1.png)
+![Example output](assets/difference-analysis/6-1.png)
 
 We can clearly see from the RGB image the difference in green in the two images. Therefore, in this example of calculating difference in image, we will pick out the green band.
 
@@ -184,7 +184,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/040_VIZ_030-Difference-Analysis/10-0.png)
+![Example output](assets/difference-analysis/10-0.png)
 
 This difference plot shows the changes in reflectance values between two time points for the green band. Let’s break it down:
 

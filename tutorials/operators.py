@@ -1,4 +1,4 @@
-"""050_PROC_020-Operators: see the accompanying Markdown guide."""
+"""operators: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

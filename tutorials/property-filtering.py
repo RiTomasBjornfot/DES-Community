@@ -1,4 +1,4 @@
-"""020_DATA_020-Property_Filtering: see the accompanying Markdown guide."""
+"""property-filtering: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

@@ -18,8 +18,8 @@ The following is a workshop on OpenEO held 2024-10-23 with swedish authorities. 
 - Number of pixels with vegetation
     - <p style="color:green">Load SCL with a geometry and count the pixels</p>
 
-    --> [SCL Mask](../../tutorials/060_EO_010-Masking-data.md) <br>
-    --> [Geometry Area](../../tutorials/030_GEOM_030-Polygons-Areas.md)
+    --> [SCL Mask](../../tutorials/masking-data.md) <br>
+    --> [Geometry Area](../../tutorials/polygon-areas.md)
 
 - Image with clouds, image without clouds
     - <p style="color:green">We plan to use filter_quality, filter fine_quality (See guide)</p>
@@ -41,7 +41,7 @@ The following is a workshop on OpenEO held 2024-10-23 with swedish authorities. 
 - Interpolate directly in the images, apply kernels (calculation boxes)
   - <span style="color:red">We did not fully understand the interpolation.</span> <span style="color:green">Could this be something for kernels?</span>
   
-    --> [Spatial Filtering](../../tutorials/060_EO_030-Spatial-Filtering.md)
+    --> [Spatial Filtering](../../tutorials/spatial-filtering.md)
  
 - Apply something known, e.g., done on the height model, to something else
     - <p style="color:green">We have a 10m height model for the Nordics that could be added as a product (and then query for a subset). However, we currently do not have a distribution license for it (Nordic DEM)</p>
@@ -62,7 +62,7 @@ The following is a workshop on OpenEO held 2024-10-23 with swedish authorities. 
    
     - <p style="color:green">When we have baseline as a property in the STAC files, we will be able to filter based on it, provided the old baseline is available to us. The OpenEO concept allows both uploading own data and loading images directly from external storage (still needs to be implemented).</p>
        
-       --> [General Comparison](../../tutorials/040_VIZ_030-Difference-Analysis.md)
+       --> [General Comparison](../../tutorials/difference-analysis.md)
 
 -  How to make requests to select a specific date and only display pixels that match a criterion (e.g., pixel values greater than x)
 
@@ -70,7 +70,7 @@ The following is a workshop on OpenEO held 2024-10-23 with swedish authorities. 
          
          - [OpenEO Processes: if](https://processes.openeo.org/#if) (Not implemented yet)
            
-       --> [Masking Data](../../tutorials/060_EO_010-Masking-data.md)
+       --> [Masking Data](../../tutorials/masking-data.md)
     
 -  Can we consume DES data with REST calls?
 
@@ -82,7 +82,7 @@ The following is a workshop on OpenEO held 2024-10-23 with swedish authorities. 
 
    - <p style="color:green">NO, OpenEO takes a geometry (polygon/multipolygon), crops out a square, and then geometry. A time range is always specified, but you can choose the first or last image in that range.</p>
 
-       --> [Check Understanding Property Filtering in Satellite Data Processing](../../tutorials/020_DATA_020-Property_Filtering.md)
+       --> [Check Understanding Property Filtering in Satellite Data Processing](../../tutorials/property-filtering.md)
 
 -  Handling different bands where data has equal pixel size, e.g., band combinations with both 10m and 20m bands + SCL (which is 20m)
 

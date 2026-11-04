@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](050_PROC_030-Batch-Processing.py)
+[Documentation home](../README.md) · [Download Python script](batch-processing.py)
 
-Run from this directory with `python 050_PROC_030-Batch-Processing.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/050_PROC_030-Batch-Processing/`.
+Run from this directory with `python batch-processing.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/batch-processing/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -122,9 +122,9 @@ ndvi
 )
 ```
 
-![Example output](assets/050_PROC_030-Batch-Processing/5-0.png)
+![Example output](assets/batch-processing/5-0.png)
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/5-1.html)
+[View saved example output](assets/batch-processing/5-1.html)
 
 ## Creating and Submitting the NDVI Process as a Batch Job
 
@@ -142,7 +142,7 @@ job
 )
 ```
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/7-0.html)
+[View saved example output](assets/batch-processing/7-0.html)
 
 ### Step 8
 
@@ -160,7 +160,7 @@ job.start_and_wait()
 0:00:19 Job 'b31b7b5d-b5b0-4a09-930e-acee996f49db': finished (progress 0.0%)
 ```
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/8-1.html)
+[View saved example output](assets/batch-processing/8-1.html)
 
 ### Step 9
 
@@ -172,7 +172,7 @@ res
 )
 ```
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/9-0.html)
+[View saved example output](assets/batch-processing/9-0.html)
 
 ### Step 10
 
@@ -182,7 +182,7 @@ job.logs()
 )
 ```
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/10-0.html)
+[View saved example output](assets/batch-processing/10-0.html)
 
 ### Step 11
 
@@ -202,7 +202,7 @@ job.logs()
 0:00:19 Job 'b31b7b5d-b5b0-4a09-930e-acee996f49db': finished (progress 0.0%)
 ```
 
-[View saved example output](assets/050_PROC_030-Batch-Processing/11-1.html)
+[View saved example output](assets/batch-processing/11-1.html)
 
 # Working with the results
 Either you click on above links or you can use `get_assets()` to do this programatically
@@ -269,7 +269,7 @@ show_result(data,is_ndvi=True)
 )
 ```
 
-![Example output](assets/050_PROC_030-Batch-Processing/15-0.png)
+![Example output](assets/batch-processing/15-0.png)
 
 ```text
 array([[[[ 0.77311725,  0.73948718,  0.72940156, ...,  0.74707642,

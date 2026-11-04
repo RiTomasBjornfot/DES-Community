@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](030_GEOM_030-Polygons-Areas.py)
+[Documentation home](../README.md) · [Download Python script](polygon-areas.py)
 
-Run from this directory with `python 030_GEOM_030-Polygons-Areas.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/030_GEOM_030-Polygons-Areas/`.
+Run from this directory with `python polygon-areas.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/polygon-areas/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -76,7 +76,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/030_GEOM_030-Polygons-Areas/2-0.png)
+![Example output](assets/polygon-areas/2-0.png)
 
 # A. Calculating the Area using Shapely
 In this section, you'll explore how to calculate the area using Shapely, which works directly with the geometry and doesn't rely on pixel data,

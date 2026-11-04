@@ -1,4 +1,4 @@
-"""060_EO_030-Spatial-Filtering: see the accompanying Markdown guide."""
+"""spatial-filtering: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

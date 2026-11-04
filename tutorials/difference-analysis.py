@@ -1,4 +1,4 @@
-"""040_VIZ_030-Difference-Analysis: see the accompanying Markdown guide."""
+"""difference-analysis: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

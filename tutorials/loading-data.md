@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](020_DATA_010-Loading-DataCubes.py)
+[Documentation home](../README.md) · [Download Python script](loading-data.py)
 
-Run from this directory with `python 020_DATA_010-Loading-DataCubes.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/020_DATA_010-Loading-DataCubes/`.
+Run from this directory with `python loading-data.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/loading-data/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -140,7 +140,7 @@ connection.list_collections()
 )
 ```
 
-[View saved example output](assets/020_DATA_010-Loading-DataCubes/7-0.html)
+[View saved example output](assets/loading-data/7-0.html)
 
 ### Finding the Right Data and Time Spans
 
@@ -185,7 +185,7 @@ datacube
 )
 ```
 
-[View saved example output](assets/020_DATA_010-Loading-DataCubes/10-0.html)
+[View saved example output](assets/loading-data/10-0.html)
 
 #### Saving and Using the Data, A word about File Formats
 
@@ -234,7 +234,7 @@ show_result(s2_image_data2, colormap="Reds")
 )
 ```
 
-![Example output](assets/020_DATA_010-Loading-DataCubes/15-0.png)
+![Example output](assets/loading-data/15-0.png)
 
 ```text
 array([[[[238., 254., 312., ..., 465., 410., 438.],

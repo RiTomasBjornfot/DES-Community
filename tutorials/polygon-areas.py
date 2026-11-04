@@ -1,4 +1,4 @@
-"""030_GEOM_030-Polygons-Areas: see the accompanying Markdown guide."""
+"""polygon-areas: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](060_EO_030-Spatial-Filtering.py)
+[Documentation home](../README.md) · [Download Python script](spatial-filtering.py)
 
-Run from this directory with `python 060_EO_030-Spatial-Filtering.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/060_EO_030-Spatial-Filtering/`.
+Run from this directory with `python spatial-filtering.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/spatial-filtering/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -214,7 +214,7 @@ original_b08 = s2_datacube.download(format="gtiff")
 _ = show_result(original_b08, is_ndvi=False, colormap="Greys_r", title="Original Image (b08) Södermalm (Stockholm)")
 ```
 
-![Example output](assets/060_EO_030-Spatial-Filtering/6-0.png)
+![Example output](assets/spatial-filtering/6-0.png)
 
 ### Step 7
 
@@ -225,7 +225,7 @@ filtered_b08 = smoothed_b08.download(format="gtiff")
 _ = show_result(filtered_b08, is_ndvi=False, colormap="Greys_r",title = "Smoothed Image (b08)")
 ```
 
-![Example output](assets/060_EO_030-Spatial-Filtering/7-0.png)
+![Example output](assets/spatial-filtering/7-0.png)
 
 ## Explaining the result
 The image above appears blurred because we exaggerated the smoothing settings to make it easier to see the difference compared to the unsmoothed image. If you understand this, keep reading, and you'll learn how to reduce the smoothing to make it more useful.
@@ -351,7 +351,7 @@ filtered_horizontal = edges_horizontal.download(format="gtiff")
 _ = show_result(filtered_horizontal, is_ndvi=False, colormap="Greys_r", title="Horizontal Edges (Sobel)")
 ```
 
-![Example output](assets/060_EO_030-Spatial-Filtering/11-0.png)
+![Example output](assets/spatial-filtering/11-0.png)
 
 ### Step 12
 
@@ -362,7 +362,7 @@ filtered_vertical = edges_vertical.download(format="gtiff")
 _ = show_result(filtered_vertical, is_ndvi=False, colormap="Greys_r", title="Vertical Edges (Sobel)")
 ```
 
-![Example output](assets/060_EO_030-Spatial-Filtering/12-0.png)
+![Example output](assets/spatial-filtering/12-0.png)
 
 ### Code Explanation
 

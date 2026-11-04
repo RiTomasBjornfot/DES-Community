@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](050_PROC_010-Processes-intro.py)
+[Documentation home](../README.md) · [Download Python script](processes.py)
 
-Run from this directory with `python 050_PROC_010-Processes-intro.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/050_PROC_010-Processes-intro/`.
+Run from this directory with `python processes.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/processes/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -104,7 +104,7 @@ conn.list_processes()
 )
 ```
 
-[View saved example output](assets/050_PROC_010-Processes-intro/5-0.html)
+[View saved example output](assets/processes/5-0.html)
 
 Now lets run some code for loading data, applying the selected process on the data and finally viewing the data. The individual steps will be explain in the cells below.
 
@@ -122,7 +122,7 @@ res =cube.ndvi(nir="b08",red="b04").download(format="gtiff")
 _ = show_result(res,is_ndvi=True)
 ```
 
-![Example output](assets/050_PROC_010-Processes-intro/7-0.png)
+![Example output](assets/processes/7-0.png)
 
 ## B. Loading the data
 Now we need to prepare a data cube that will load relevant example data that can be used in our NDVI process. 

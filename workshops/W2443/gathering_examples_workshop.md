@@ -172,18 +172,18 @@ plt.savefig("median_b11.png", dpi=100, pad_inches=0)
 )
 ```
 
-## 2. RGB from guide 040_VIZ_010-RGB
+## 2. RGB from guide rgb
 
 
---> [RGB Images](../../tutorials/040_VIZ_010-RGB.md)
+--> [RGB Images](../../tutorials/rgb.md)
 
 ## 3. All bands
 
 <br> --> [Working with resolutions](./Resampling-Bands.md)
 
-## 4. NDVI from guide 050_PROC_010-Processes-intro
+## 4. NDVI from guide processes
 
---> [NDVI](../../tutorials/050_PROC_010-Processes-intro.md)
+--> [NDVI](../../tutorials/processes.md)
 
 ## 5. SCL masking clouds
 

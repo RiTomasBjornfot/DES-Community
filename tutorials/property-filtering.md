@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](020_DATA_020-Property_Filtering.py)
+[Documentation home](../README.md) · [Download Python script](property-filtering.py)
 
-Run from this directory with `python 020_DATA_020-Property_Filtering.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/020_DATA_020-Property_Filtering/`.
+Run from this directory with `python property-filtering.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/property-filtering/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 

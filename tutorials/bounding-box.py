@@ -1,4 +1,4 @@
-"""030_GEOM_010-Bounding-box: see the accompanying Markdown guide."""
+"""bounding-box: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](030_GEOM_020-Polygons-Intro.py)
+[Documentation home](../README.md) · [Download Python script](polygons.py)
 
-Run from this directory with `python 030_GEOM_020-Polygons-Intro.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/030_GEOM_020-Polygons-Intro/`.
+Run from this directory with `python polygons.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/polygons/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -182,13 +182,13 @@ display(gpd.GeoDataFrame.from_features(proper_poly_with_hole))
 From GeoJSON editor:
 ```
 
-[View saved example output](assets/030_GEOM_020-Polygons-Intro/7-1.html)
+[View saved example output](assets/polygons/7-1.html)
 
 ```text
 Moved holes inside the polygon
 ```
 
-[View saved example output](assets/030_GEOM_020-Polygons-Intro/7-3.html)
+[View saved example output](assets/polygons/7-3.html)
 
 ### Step 8
 
@@ -214,7 +214,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/8-0.png)
+![Example output](assets/polygons/8-0.png)
 
 While the visualization might not always perfectly reflect the geometry due to limitations in the plotting library, the underlying structure of the polygon is correct. Despite these minor discrepancies in visualization, the polygon is properly defined and can be confidently used for further analysis. Let's proceed with fetching satellite imagery using this geometry!
 
@@ -251,11 +251,11 @@ show_result(s2_image_data2, colormap="gray", norm=False)
 )
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/10-0.png)
+![Example output](assets/polygons/10-0.png)
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/10-1.png)
+![Example output](assets/polygons/10-1.png)
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/10-2.png)
+![Example output](assets/polygons/10-2.png)
 
 ```text
 array([[[[   nan,    nan,    nan, ..., 10008., 10032., 10056.],
@@ -326,7 +326,7 @@ plot_xr_dataarray_contact_copy(loaded_data['b02'], figsize=(20,10), cmap="PiYG")
 )
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/12-0.png)
+![Example output](assets/polygons/12-0.png)
 
 As shown in the visual output, each time step in the series respects the geometry of the polygon, including the holes. This consistency is crucial for accurate temporal analysis, as it ensures that no data is included from regions outside the intended area of interest, such as water bodies or other excluded areas.
 
@@ -404,7 +404,7 @@ plt.show()
 Original number of points: 333
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/16-1.png)
+![Example output](assets/polygons/16-1.png)
 
 ### Step 17
 
@@ -445,7 +445,7 @@ plt.show()
 Simplified number of points: 17
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/17-1.png)
+![Example output](assets/polygons/17-1.png)
 
 ### Step 18
 
@@ -498,6 +498,6 @@ plt.show()
 Simplified number of points: 17
 ```
 
-![Example output](assets/030_GEOM_020-Polygons-Intro/18-1.png)
+![Example output](assets/polygons/18-1.png)
 
 In an upcoming exercise you will learn how to calculate the area of a polygon in different ways. Revisit these polygons too see what the difference in area will be as an extra exercise. 

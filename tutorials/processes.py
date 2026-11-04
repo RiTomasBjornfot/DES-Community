@@ -1,4 +1,4 @@
-"""050_PROC_010-Processes-intro: see the accompanying Markdown guide."""
+"""processes: see the accompanying Markdown guide."""
 from pathlib import Path
 import os
 os.chdir(Path(__file__).resolve().parent)

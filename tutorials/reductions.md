@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](060_EO_020-Reductions.py)
+[Documentation home](../README.md) · [Download Python script](reductions.py)
 
-Run from this directory with `python 060_EO_020-Reductions.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/060_EO_020-Reductions/`.
+Run from this directory with `python reductions.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/reductions/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -92,7 +92,7 @@ Band 2: 0 NoData pixels out of 314484
 Band 3: 0 NoData pixels out of 314484
 ```
 
-![Example output](assets/060_EO_020-Reductions/5-1.png)
+![Example output](assets/reductions/5-1.png)
 
 ```text
 Band 1: 0 NoData pixels out of 314484
@@ -100,7 +100,7 @@ Band 2: 0 NoData pixels out of 314484
 Band 3: 0 NoData pixels out of 314484
 ```
 
-![Example output](assets/060_EO_020-Reductions/5-3.png)
+![Example output](assets/reductions/5-3.png)
 
 ```text
 Shape of downloaded datacube (time,bands,x,y) (2, 3, 438, 718)
@@ -145,11 +145,11 @@ s2_image_data_reduced = reduced_cube_over_time.download(format="gtiff")
 results_time_reduce=show_result(s2_image_data_reduced, colormap="Greys_r")
 ```
 
-![Example output](assets/060_EO_020-Reductions/12-0.png)
+![Example output](assets/reductions/12-0.png)
 
-![Example output](assets/060_EO_020-Reductions/12-1.png)
+![Example output](assets/reductions/12-1.png)
 
-![Example output](assets/060_EO_020-Reductions/12-2.png)
+![Example output](assets/reductions/12-2.png)
 
 Let's check our results:
 
@@ -177,7 +177,7 @@ connection.list_processes()
 )
 ```
 
-[View saved example output](assets/060_EO_020-Reductions/16-0.html)
+[View saved example output](assets/reductions/16-0.html)
 
 And get an explanation along the lines of "Gives the first element of an array." along with examples. When we apply the "first" reduction together with the time dimension we take the **first** element in the list of images (it might not be the earliest image chronologically).
 
@@ -204,13 +204,13 @@ Unzipping data....
 Band 1: 0 NoData pixels out of 314484
 ```
 
-![Example output](assets/060_EO_020-Reductions/19-1.png)
+![Example output](assets/reductions/19-1.png)
 
 ```text
 Band 1: 0 NoData pixels out of 314484
 ```
 
-![Example output](assets/060_EO_020-Reductions/19-3.png)
+![Example output](assets/reductions/19-3.png)
 
 The figure show each image with the mean of Red, Blue, Green bands ('b04', 'b03', 'b02' respectively) in greyscale.
 

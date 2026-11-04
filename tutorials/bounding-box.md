@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](030_GEOM_010-Bounding-box.py)
+[Documentation home](../README.md) · [Download Python script](bounding-box.py)
 
-Run from this directory with `python 030_GEOM_010-Bounding-box.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/030_GEOM_010-Bounding-box/`.
+Run from this directory with `python bounding-box.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/bounding-box/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -197,7 +197,7 @@ plt.show()
 )
 ```
 
-![Example output](assets/030_GEOM_010-Bounding-box/7-0.png)
+![Example output](assets/bounding-box/7-0.png)
 
 ## 4. Understanding Coordinate Reference Systems (CRS) and OpenEO
 

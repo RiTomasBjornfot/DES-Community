@@ -1,6 +1,6 @@
-[Documentation home](../README.md) · [Download Python script](050_PROC_020-Operators.py)
+[Documentation home](../README.md) · [Download Python script](operators.py)
 
-Run from this directory with `python 050_PROC_020-Operators.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/050_PROC_020-Operators/`.
+Run from this directory with `python operators.py`. Read the guide first: the script runs all steps in order and may submit remote jobs. Figures and maps are saved under `outputs/operators/`.
 
 > Saved outputs below come from the original teaching material; they are illustrations, not a fresh run against the current service.
 
@@ -87,7 +87,7 @@ conn.list_processes()
 )
 ```
 
-[View saved example output](assets/050_PROC_020-Operators/4-0.html)
+[View saved example output](assets/operators/4-0.html)
 
 ## B. Load Some Sample data
 We will revisit the same area and timespan as we used when calculating the NDVI using the processes. We load the bands into a datacube and extract the different bands into two variables `red` and `nir` to increase readability. 
@@ -132,7 +132,7 @@ display(red) # a graphical way to view the process graph.
 )
 ```
 
-[View saved example output](assets/050_PROC_020-Operators/8-0.html)
+[View saved example output](assets/operators/8-0.html)
 
 ### Step 9
 
@@ -221,7 +221,7 @@ ndvi
   'result': True}}
 ```
 
-[View saved example output](assets/050_PROC_020-Operators/12-1.html)
+[View saved example output](assets/operators/12-1.html)
 
 Double click on the "reducer: Process" in the graph above to expand next level of details. Can you recognize the process nodes ? As an interesting comparison, let´s create the ndvi calculation without using the intermediate variables:
 
@@ -272,7 +272,7 @@ long_ndvi
   'result': True}}
 ```
 
-[View saved example output](assets/050_PROC_020-Operators/15-1.html)
+[View saved example output](assets/operators/15-1.html)
 
 ### Why Do the Process Graphs Differ?
 
@@ -317,7 +317,7 @@ show_result(ndvi_image_data,is_ndvi=True)
 )
 ```
 
-![Example output](assets/050_PROC_020-Operators/18-0.png)
+![Example output](assets/operators/18-0.png)
 
 ```text
 array([[[[ 0.77311725,  0.73948718,  0.72940156, ...,  0.74707642,
